@@ -1,0 +1,158 @@
+[
+  {
+      "id": "0",
+      "question": "What jersey number Lebron have?",
+      "answer": "23",
+      "false_answer": "6;24;8"
+  },
+  {
+      "id": "1",
+      "question": "What's Lebron's Nickname?",
+      "answer": "LBJ",
+      "false_answer": "The Queen;LeGM;LeCoach"
+  },
+  {
+      "id": "2",
+      "question": "Who's AD?",
+      "answer": "Anthony Davis",
+      "false_answer": "Active Directory;Andre Drummond;Andrew Davis"
+  },
+  {
+      "id": "3",
+      "question": "Which is Kobe Bryant's one of favorite movies?",
+      "answer": "Whiplash",
+      "false_answer": "Lord of the Rings;Ali;Anaconda"
+  },
+  {
+      "id": "4",
+      "question": "What's the name of Trevor Ariza's child?",
+      "answer": "Tajh Ariza",
+      "false_answer": "Maj Ariza;Shia Ariza;John Ariza"
+  },
+  {
+      "id": "5",
+      "question": "What date did Alex Caruso sign with Oklahoma City Thunder?",
+      "answer": "9/23/16",
+      "false_answer": "Donation for Lakers G-League team; Donation to Repulican Party;Donation for Democratic Party"
+  },
+  {
+      "id": "6",
+      "question": "Why did Alex Caruso shave his head (Hint: Awareness)?",
+      "answer": "Donation for testicular cancer research",
+      "false_answer": "Donation to his former school (A&M Consolidated High School); Donation to Repulican Party;Donation for Democratic Party"
+  },
+  {
+      "id": "7",
+      "question": "Which Player was the most google searched on 3/16/2022?",
+      "answer": "Lebron James",
+      "false_answer": "Alex Caruso; Russell Westbrook; Magic Johnson"
+  },
+  {
+      "id": "8",
+      "question": "Who is Kobe's eldest child?",
+      "answer": "Natalia Bryant",
+      "false_answer": "Gianna Bryant; Capri Bryant;Diamante Bryant"
+  },
+  {
+      "id": "9",
+      "question": "What date did D'Angelo betray Nick Young?",
+      "answer": "3/30/16",
+      "false_answer": "1/2/2016;3/12/2016;12/27/2015"
+  },
+  {
+      "id": "10",
+      "question": "Who is the last Caucatation Lakers player to make into All-Star Game who's not Pau Gasol? ",
+      "answer": "Gail Goodrich",
+      "false_answer": "Jerry West; Rudy LaRusso; Gail Goodrich"
+  },
+  {
+      "id": "11",
+      "question": "Which Player was not voted into 1963 All-Star game?",
+      "answer": "Dick GarMaker",
+      "false_answer": "Elgin Baylor;Rudy LaRusso;Jerry West"
+  },
+  {
+      "id": "12",
+      "question": "How many jerseys did Lakers retire as of 3/19/2022?",
+      "answer": "11",
+      "false_answer": "7;14;16"
+  },
+  {
+      "id": "13",
+      "question": "Was Game 6 against Sacramento Kings during 2002 Playoffs rigged?",
+      "answer": "Yes",
+      "false_answer": "Yes;Yes;Yes"
+  },
+  {
+      "id": "14",
+      "question": "What was the offensive rating of 2002-03 Lakers team during regular season?",
+      "answer": "107.2",
+      "false_answer": "108.5;100.4;103;5"
+  },
+  {
+      "id": "15",
+      "question": "Who is better basketball player?",
+      "answer": "Russell Westbrook",
+      "false_answer": "Kobe Bryant when he was 2 years old;Kobe Bryant when he was 8 years old; Kobe Bryant when he's literally sleeping"
+  },
+  {
+      "id": "16",
+      "question": "What's longest losing streak by Lakers?",
+      "answer": "10",
+      "false_answer": "6;8;12"
+  },
+  {
+      "id": "17",
+      "question": "Who was Kobe Bryant traded for after he was drafted by Charlotte Hornets?",
+      "answer": "Vlade Divac",
+      "false_answer": "Cash Consideration and 1st Round Pick;Dave Cowns and 2nd Round Pick;1st Round and 2nd Round pick"
+  },
+  {
+      "id": "18",
+      "question": "How many techcnial fouls does Shaquille O'Neal have as a player?",
+      "answer": "150",
+      "false_answer": "88;125;168"
+  },
+  {
+      "id": "19",
+      "question": "How much did Kobe Bryant improve on his 3-Points shooting after he cut his afro?",
+      "answer": "13%",
+      "false_answer": "4%;8%;11%"
+  },
+  {
+      "id": "20",
+      "question": "What team was Lakers playing against when Dwight Howard and Steve Nash argue with each other during the game?",
+      "answer": "Miami Heat",
+      "false_answer": "Cleveland Cavaliers;Houston Rockets;Portland Blazers"
+  },
+  {
+      "id": "21",
+      "question": "Who works as a Executive Security Agent for Lakers (As of Sep 2021)?",
+      "answer": "Mike Gavaldon III",
+      "false_answer": "Not Ready;Not Ready;Not Ready"
+  },
+  {
+      "id": "22",
+      "question": "Which is correct one for Lakers' official purple color (in Hex)?",
+      "answer": "#552583",
+      "false_answer": "#3c1a5d;#622b99;#8846cb"
+  },
+  {
+      "id": "23",
+      "question": "How many scores did Kobe make on June 9, 2000 against Pacers on NBA Finals?",
+      "answer": "2",
+      "false_answer": "24;33;51"
+  },
+  {
+      "id": "24",
+      "question": "Which NBA Finals did Lakers loss to Boston Celtics?",
+      "answer": "2010",
+      "false_answer": "2011;2013;2009"
+  },
+  {
+      "id": "25",
+      "question": "When was Jeremy Lin traded to Lakers from Houston Rockets?",
+      "answer": "7/13/14",
+      "false_answer": "7/11/2014;7/12/2014;7/14/2014"
+  }
+]
