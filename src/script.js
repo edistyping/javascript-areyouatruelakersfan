@@ -15,7 +15,8 @@ var correctAnswer = undefined;
 var currentQuestion = 0;
 var questions = [];
 
-
+// Orange: FDB927
+// Purple: 552583
 
 
 // Create an 'num'-sized array between 0 ~ maxNumber without duplicate
@@ -39,14 +40,6 @@ function generateNumbers(num, maxNumber) {
     }        
     return arr_temp;
 }
-
-/* Support Codes */
-function clearAnswerButtons() {  
-    var ele = document.getElementsByName("answerButtons");
-    for(var i=0;i<ele.length;i++){
-        ele[i].checked = false;
-    }
-} 
 
 function showQuestionsButtons() {  
     document.getElementsByClassName("container-questions")[0].style.display = "block";
@@ -85,7 +78,6 @@ async function loadQuestions() {
     })
     .catch(err => console.log(err));
 
-    // Push the data into 'questions' array
     for(i= 0; i < numberOfQuestions; i++) { 
         var x = randomNumbers[i];
         questions.push(response[x]); 
@@ -93,16 +85,16 @@ async function loadQuestions() {
 }
 
 // when submit is clicked or if 3 seconds are passed, increment currentQuestion 
-function displayQuestions(x) {  
+function displayQuestions() {  
     // currentQuestion < numberOfQuestions
     // Replaced currentQuestion for x
-    var temp = questions[x].false_answer;    
+    var temp = questions[currentQuestion].false_answer;    
     const fakeAnswers = temp.split(";");
-    const arr_answers = [questions[x].answer].concat(fakeAnswers); // both real and fake
+    const arr_answers = [questions[currentQuestion].answer].concat(fakeAnswers); // both real and fake
     const randomNumbers = generateNumbers(4, 3); // 4 items between 0 to 10        
     correctAnswer = randomNumbers.indexOf(0); // answerFirst, answerSecond, etc.
 
-    questionEl.innerHTML = questions[x].question;
+    questionEl.innerHTML = questions[currentQuestion].question;
     answerFirstButtonEl.innerHTML =  arr_answers[randomNumbers[0]];
     answerSecondButtonEl.innerHTML =  arr_answers[randomNumbers[1]];
     answerThirdButtonEl.innerHTML =  arr_answers[randomNumbers[2]];
@@ -116,7 +108,7 @@ function displayGameOver() {
     correctAnswerEl.innerHTML = "Score: " + numberOfCorrectAnswers;
 
     if (numberOfCorrectAnswers == numberOfQuestions) {
-        correctAnswerEl.innerHTML = "Congratulation, I accept your victory";
+        correctAnswerEl.innerHTML = "You Won. Now get out please";
     } else {
         correctAnswerEl.innerHTML = "Congratulation, you lost";
     }
@@ -124,19 +116,20 @@ function displayGameOver() {
     hideQuestionsButtons();
     hideAnswerButtons();
     showReplayContainer();
-    console.log("Game is over...")
+    
+    // Pause the timer since the game is over
+    count = 10;
+    pause = true;
 }
 
-/* Given User's choice, see if he/she selected the correct answer */
+/* Given User's choice, see if selected the correct answer */
 function checkAnswer(choice) { 
     const temp = ["answerFirst", "answerSecond", "answerThird", "answerFourth"];
     if (choice == temp[correctAnswer]) {
         console.log("checkAnswer() ---> User got the answer correct!!!")
         numberOfCorrectAnswers++;
     }
-    
 }
-
 
 // One way to use onclick()
 function onClickAnswer(choice) {
@@ -145,15 +138,16 @@ function onClickAnswer(choice) {
     
     // Increment for next Question
     currentQuestion++;
+    count = 11;    
+
+    
     if (currentQuestion >= numberOfQuestions) {
-        displayGameOver();
+        displayGameOver();        
     } else {
-        // Need to reset timer here
-        //document.getElementById("timeSecond").innerHTML = timeLeft;
-        displayQuestions(currentQuestion);
+
+        resetTimer();
+        displayQuestions();
     }
-
-
 }
 
 // Another way to use onclick()
@@ -167,7 +161,10 @@ replayButton.addEventListener("click", () => {
     hideReplayContainer();
     showQuestionsButtons();
     showAnswerButtons();
-    displayQuestions(currentQuestion);
+    displayQuestions();
+    
+    // Restart the timer
+    resetTimer();
 
 });
 
@@ -178,44 +175,54 @@ gamestartButton.addEventListener("click", () => {
     console.log("gamestartButton() clicked...");
 
     // Hide Start button and show questions
-    document.getElementsByClassName("container-header")[0].style.display = "none"
-    document.getElementsByClassName("container-quiz")[0].style.display = "block"
-    
+    document.getElementsByClassName("container-header")[0].style.display = "none";
+    document.getElementsByClassName("container-quiz")[0].style.display = "block";
+
     hideReplayContainer();
     showQuestionsButtons();
-    displayQuestions(currentQuestion);    
+    displayQuestions();    
 
-    // Need to reset timer here
-    countTimers();
-
+    // Timer
+    resetTimer();
 })
 
 loadQuestions();
 
-
-/* These are moved to top */
-var timersCount = 0;
 var pause = true; //is timer paused
-//countTimers();
+var counter = setInterval(timer, 1000);
 
-function countTimers() {
-  timersCount++;
+var count;
 
-  var count = 6;
-  var counter = setInterval(timer, 1000);
-
-  function timer() {
-    if (!pause) { //do something if not paused
-      count = count - 1;
-      if (count < 0) {
-        clearInterval(counter);
-        setTimeout(countTimers, 5000); //start count from 6 again after 5 sec
-        return;
-      } 
-
-      document.getElementById("textTimer").innerHTML = count;
-    }
-  }
-
-  document.getElementById("textTimer").innerHTML = timersCount;
+function resetTimer() {
+    pause = false;
+    count = 10;    
+    document.getElementById("textTimer").innerHTML = count;
 }
+
+function timer() {
+    if (!pause) { //do something if not paused
+        count = count - 1;
+
+        if (count == 0) {
+            currentQuestion++;
+            count = 10;
+            displayQuestions();
+            //clearInterval(counter);
+            
+            //setTimeout(countTimers, 6000); //start count from 6 again after 5 sec
+            //currentQuestion++; 
+        } 
+        
+        if (currentQuestion >= numberOfQuestions) {
+            console.log("Game is over.... ")
+            pause = true;
+            displayGameOver();
+        }
+
+
+
+    document.getElementById("textTimer").innerHTML = count;
+    
+}
+}
+

@@ -4,10 +4,12 @@ body {
     height: 100vh;
     min-width: 100vh;
 
-    background-color: #FDB927;
+    background-color: #552583;
     
     justify-content: center;
     align-items: center;
+
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -18,7 +20,6 @@ h1 {
 h2 {
     font-size: 2rem;
     line-height: 1;
-    font-style: italic;
 }
 h3 {
     font-size: 4rem;
@@ -31,13 +32,9 @@ p {
     margin: 0;
 }
 
-.container-replay {
-    background-color: orange;
-}
-
 .container-game {
-    background-color: #552583;
-    color: white;
+    background-color: #FDB927;
+    color: black;
     
     width: 100%;
     height: 80%;
@@ -49,8 +46,16 @@ p {
     justify-content: center;
 }
 
+.container-header {
+    height: fit-content; 
+    width: 100%; 
+    
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+}
+
 .container-quiz {
-    background-color: rgb(245, 192, 255);
     
     display: none;
     flex-direction: column;
@@ -62,27 +67,15 @@ p {
 
 .container-answer {
     font-size: 2rem;
-    background-color: yellow;
     border: solid 10px black;
 
     display: flex;
     flex-direction: column;
-
-
 }
 
-.container-header {
-    height: 100%; 
-    width: 100%; 
-    
-    text-align: center; 
-    justify-content: center;
-    align-items: center;
-}
 
 .container-questions {
     display: none;
-    background-color: yellowgreen;
     text-align: center;
     
 }
@@ -92,6 +85,7 @@ p {
     grid-template-columns: repeat(2, auto);
     gap: 20px;
     margin: 20px;
+    justify-content: center;
 }
 
 .container-replay {
@@ -100,25 +94,30 @@ p {
 }
 
 .gamestartButton {        
-    height: 20%;
+    height: fit-content;
     font-size: 1em;
-    min-width: 10em;
+    min-width:5em;
+    color: white;
+    background-color: #552583;
 }
 
 .answerButton {
     height: 100%;
     font-size: 1em;
-    min-width: 10em;
+    min-width: 8em;
+    color: white;
+    background-color: #552583;
 }
 
 .replayButton {
     height: 100%;
     font-size: 1em;
     min-width: 10em;
+    margin: 5% auto;
 }
 
 button:hover {
-    background: #2980b9;
+    background: #7c36bf;
 }
 
 
