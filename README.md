@@ -2,6 +2,8 @@
 title: Are You a True Lakers Fan?
 ---
 
+# Link: https://edistyping.github.io/javascript-areyouatruelakersfan/
+
 # Questions are unfair and biased but not rigged. 
 
 # Finished 
