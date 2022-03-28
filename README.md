@@ -4,7 +4,7 @@ title: Are You a True Lakers Fan?
 
 Link: https://edistyping.github.io/javascript-areyouatruelakersfan/
 
-![Screenshot 1](http://url/to/img.pnghttps://github.com/edistyping/javascript-areyouatruelakersfan/blob/master/Screenshots/1.JPG?raw=true)
+![Screenshot 1](https://raw.githubusercontent.com/edistyping/javascript-areyouatruelakersfan/master/Screenshots/1.JPG)
 
 # Questions are unfair and biased but not rigged. 
 
