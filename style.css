@@ -120,7 +120,7 @@ button:hover {
     background-color: #7c36bf;
 }
 button:focus { 
-    color: inherit;
+    background-color: inherit;
 }
 
 
