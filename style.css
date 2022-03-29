@@ -119,7 +119,9 @@ p {
 button:hover {
     background: #7c36bf;
 }
-
+button:focus { 
+    color: inherit;
+}
 
 
 

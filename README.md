@@ -4,9 +4,14 @@ title: Are You a True Lakers Fan?
 
 Link: https://edistyping.github.io/javascript-areyouatruelakersfan/
 
+# Questions are maybe unfair but not rigged. 
 ![Screenshot 1](https://raw.githubusercontent.com/edistyping/javascript-areyouatruelakersfan/master/Screenshots/1.JPG)
 
-# Questions are unfair and biased but not rigged. 
+# To Do (Updated: 3/28/2022)
+1. Formatting looks horrible on Mobile. Fix it
+    - Displaying Answers box
+    - After a question is answered, the selected button is has formatting applid. Reset this 
+
 
 # Finished 
 + Update randomNumbers() to avoid duplicates
