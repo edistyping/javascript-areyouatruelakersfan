@@ -42,7 +42,7 @@ function generateNumbers(num, maxNumber) {
 }
 
 function showQuestionsButtons() {  
-    document.getElementsByClassName("container-questions")[0].style.display = "block";
+    document.getElementsByClassName("container-questions")[0].style.display = "flex";
 } 
 function hideQuestionsButtons() {
     document.getElementsByClassName("container-questions")[0].style.display = "none";
@@ -56,7 +56,7 @@ function hideAnswerButtons() {
     document.getElementsByClassName("container-answers")[0].style.display = "none";
 }
 function showReplayContainer() {
-    document.getElementsByClassName("container-replay")[0].style.display = "block";   
+    document.getElementsByClassName("container-replay")[0].style.display = "flex";   
 }
 function hideReplayContainer() {
     document.getElementsByClassName("container-replay")[0].style.display = "none";   
