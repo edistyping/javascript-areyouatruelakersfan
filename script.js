@@ -113,9 +113,16 @@ function displayGameOver() {
         correctAnswerEl.innerHTML = "Congratulation, you lost";
     }
     
+
+
     hideQuestionsButtons();
     hideAnswerButtons();
     showReplayContainer();
+
+    document.getElementsByClassName("container-header").style.display = "none";
+    document.getElementsByClassName("container-questions").style.display = "none";
+    document.getElementsByClassName("container-replay")[0].style.display = "flex";   
+    
     
     // Pause the timer since the game is over
     count = 10;
@@ -176,7 +183,7 @@ gamestartButton.addEventListener("click", () => {
 
     // Hide Start button and show questions
     document.getElementsByClassName("container-header")[0].style.display = "none";
-    document.getElementsByClassName("container-quiz")[0].style.display = "block";
+    document.getElementsByClassName("container-quiz")[0].style.display = "flex";
 
     hideReplayContainer();
     showQuestionsButtons();

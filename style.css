@@ -19,7 +19,6 @@ body {
 .container-game {
     background-color: #FDB927;
     color: black;
-    border: solid 10px;
 
     height: 80%;
     width: 100%;
@@ -40,9 +39,11 @@ body {
 }
 h1 {
     font-size: 6em;
+    margin: 0;
 }
 h2 {
-    font-size: 2em;
+    font-size: 3em;
+    margin: 0;
 }
 .gamestartButton {        
     height: fit-content;
@@ -56,39 +57,37 @@ h2 {
 }
 
 .container-quiz {
-    
+
+    width: 100%; 
+    height: 100%;
+    text-align: center; 
+    margin: 0;
+
     display: none;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+    justify-content: space-evenly;
 
-}
-
-.container-answer {
-    border: solid 10px black;
-
-    display: flex;
-    flex-direction: column;
 }
 
 
 .container-questions {
     display: flex;
     flex-direction: column;
+    margin: 0;
 
     text-align: center;
     
-    background-color: white;
+    background-color: lightseagreen;
     height: 30%;
 
-    margin: 0;
 }
 h3 {
-    font-size: 100%;
+    font-size: 5rem;
     margin: 0;
+    text-align: center;
 }
 p {
-    font-size: 100%;
+    font-size: 3rem;
     text-align: center;
     margin: 0;
 }
@@ -98,6 +97,10 @@ p {
     display: grid;
     grid-template-columns: repeat(2, auto);
     
+    gap: 0;
+    margin: 0;
+
+    background-color: pink;
 }
 
 .answerButton {
@@ -109,18 +112,20 @@ p {
     font-size: 3em;
     color: white;
     background-color: #552583;
-    background-color: grey;
 
 }
 
 .container-replay {
     
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-evenly;
 
     width: 100%; 
     height: 100%;
+
+    background-color: pink;
+
 }
 .replayButton {
     height: fit-content;
