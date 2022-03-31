@@ -51,11 +51,12 @@ h2 {
 }
 .gamestartButton {        
     max-width:100%;
-    max-height:100%;    
+    max-height:100%;
+    height: fit-content;    
     font-size: 3rem;
 
     margin: 0 auto;
-    padding: 5%;
+    padding: 3%;
 
     background-color: #552583;
     color: white;
@@ -96,6 +97,8 @@ p {
     font-size: 3em;
     text-align: center;
     margin: 0;
+    white-space: pre-wrap;      
+
 }
 
 .container-answers {
@@ -107,8 +110,8 @@ p {
 }
 
 .answerButton {
-    height: 80%;
-    width: 80%;
+    height: 60%;
+    width: 60%;
     
     margin: auto; 
 
@@ -191,13 +194,12 @@ button:hover {
     }
 
     .answerButton  {
-        font-size: 1em;
+        font-size: 1.5em;
         margin: auto;
         background-color: #001c7a;
         
-        width: 70%;
-        height: 30%;
-
+        width: 75%;
+        height: 40%;
     }
 
     h3 {
@@ -229,11 +231,6 @@ button:hover {
         background-color: #007A33;
         color: #ffffff;
 
-    }
-
-    .replayButton:focus {
-        outline: none;
-        box-shadow: none;
     }
   }
 
