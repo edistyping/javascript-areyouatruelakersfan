@@ -10,7 +10,8 @@ Link: https://edistyping.github.io/javascript-areyouatruelakersfan/
 # To Do (Updated: 3/28/2022)
 1. Formatting looks horrible on Mobile. Fix it
     - Displaying Answers box
-    - After a question is answered, the selected button is has formatting applid. Reset this 
+    - Mobile - h1 and h2 is extending horizontally
+    - Mobile - default height is too big 
 
 
 # Finished 

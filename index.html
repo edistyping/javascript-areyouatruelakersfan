@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Countdown</title>
+        <title>Are you a True Lakers fan?</title>
         <link rel="stylesheet" href="style.css" />
         <script type="text/javascript" src="data.json"></script>
         <script src="script.js" defer></script>
@@ -19,12 +19,12 @@
 
         <div class="container-header">  
           <h1 id="holidayName">Are you a True Lakers fan?</h1>
-          <h2>Answer 5 random questions in 3 seconds each</h2>        
-          <button class="gamestartButton" id="gamestartButton">Start</button>
+          <h2>5 Random Questions!</h2>        
+          <h2>10 Seconds Each!</h2>        
+          <button class="gamestartButton" id="gamestartButton">START</button>
         </div>
         
         <div class="container-quiz" id="container-quiz" >
-
           <div class="container-questions">
             <h3 id="textTimer"></h3>
             <p id="question">(Question)</p>              
@@ -35,11 +35,10 @@
             <button class="answerButton" id="answerSecondButton" name="answerButtons" onclick="onClickAnswer('answerSecond')"></button>
             <button class="answerButton" id="answerThirdButton" name="answerButtons" onclick="onClickAnswer('answerThird')"></button>
             <button class="answerButton" id="answerFourthButton" name="answerButtons" onclick="onClickAnswer('answerFourth')">Button 4</button>
-          </div>
-                    
+          </div>                    
         </div>    
           
-        <div class="container-replay" id="test">
+        <div class="container-replay" >
           <h3 id="numberofCorrectAnswers" ></h3>  
           <button class="replayButton" id="buttonReplay" >Replay</button>
         </div>

@@ -18,7 +18,6 @@ var questions = [];
 // Orange: FDB927
 // Purple: 552583
 
-
 // Create an 'num'-sized array between 0 ~ maxNumber without duplicate
 function generateNumbers(num, maxNumber) {
     
@@ -65,6 +64,12 @@ function hideScores() {
     document.getElementById("numberofCorrectAnswers").style.display = "none";   
 }
 
+function showQuiz() {
+    document.getElementsByClassName("container-quiz")[0].style.display = "flex";
+}
+function hideQuiz() {
+    document.getElementsByClassName("container-quiz")[0].style.display = "none";
+}
 
 /* loadQuestions from json file  */
 async function loadQuestions() {
@@ -112,17 +117,13 @@ function displayGameOver() {
     } else {
         correctAnswerEl.innerHTML = "Congratulation, you lost";
     }
-    
 
-
-    hideQuestionsButtons();
-    hideAnswerButtons();
+    //hideQuestionsButtons();
+    //hideAnswerButtons();
+    hideQuiz();
     showReplayContainer();
 
-    document.getElementsByClassName("container-header").style.display = "none";
-    document.getElementsByClassName("container-questions").style.display = "none";
-    document.getElementsByClassName("container-replay")[0].style.display = "flex";   
-    
+
     
     // Pause the timer since the game is over
     count = 10;
@@ -164,12 +165,15 @@ replayButton.addEventListener("click", () => {
     currentQuestion = 0;
     numberOfCorrectAnswers = 0;
 
+    
+
     hideScores();
     hideReplayContainer();
     showQuestionsButtons();
     showAnswerButtons();
+    showQuiz();
     displayQuestions();
-    
+
     // Restart the timer
     resetTimer();
 
@@ -183,8 +187,10 @@ gamestartButton.addEventListener("click", () => {
 
     // Hide Start button and show questions
     document.getElementsByClassName("container-header")[0].style.display = "none";
-    document.getElementsByClassName("container-quiz")[0].style.display = "flex";
+    //document.getElementsByClassName("container-quiz")[0].style.display = "flex";
+    showQuiz();
 
+    
     hideReplayContainer();
     showQuestionsButtons();
     displayQuestions();    
